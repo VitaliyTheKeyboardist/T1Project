@@ -1,0 +1,11 @@
+.header {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26.74px;
+  color: #606060;
+}
+.footer {
+  composes: header;
+  color: #999999;
+}

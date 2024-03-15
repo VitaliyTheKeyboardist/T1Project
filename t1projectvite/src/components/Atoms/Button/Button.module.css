@@ -1,0 +1,25 @@
+.deep {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 18px 30px;
+  background-color: #6c5fbc;
+  color: #ffffff;
+  border: 1px solid #6c5fbc;
+  border-radius: 12.41px;
+}
+.deepImage {
+  composes: deep;
+  padding-top: 10px;
+}
+.light {
+  composes: deep;
+  background-color: #ffffff;
+  color: #6c5fbc;
+}
+.image {
+  position: relative;
+  top: 8px;
+  margin-left: 13px;
+}

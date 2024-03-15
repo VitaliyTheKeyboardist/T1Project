@@ -1,0 +1,10 @@
+.text {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 76px;
+  line-height: 91.2px;
+}
+.spanText {
+    composes: text;
+    color: #5C4EAE
+}
