@@ -1,17 +1,25 @@
+import { ReactNode } from "react"
 import style from "./Text.module.css"
 
 interface Props {
-  type: string
-  text: string
-  spanText?: string
+  type:
+    | "mediumLight"
+    | "opacityText"
+    | "smallLight"
+    | "foodCardStatus"
+    | "deliveryTime"
+    | "foodCardStatusCancelled"
+    | "comment"
+    | "question"
+    | "answer"
+  children: ReactNode
 }
 
-const Text = ({ type, text, spanText }: Props) => {
+const Text = ({ type, children }: Props) => {
   return (
     <p className={style[type]}>
-      {type === "opacityText" && <div className={style.line}></div>}
-      {text}
-      <span className={style.spanText}>{spanText}</span>
+      {type === "opacityText" && <span className={style.line}></span>}
+      {children}
     </p>
   )
 }

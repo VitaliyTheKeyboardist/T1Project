@@ -1,0 +1,11 @@
+.foodCardRank {
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #8E97A6;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,10 @@
+.bookmark {
+  width: 40px;
+  height: 40px;
+}
+.none {
+  display: none;
+}
+.display {
+  display: inline;
+}
