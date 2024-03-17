@@ -1,0 +1,10 @@
+.controlBlock {
+  width: 1250px;
+  height: 576px;
+  margin: 136px auto 0px;
+  display: flex;
+}
+.imageBlock {
+  background-image: url(./Image/Background.png);
+  background-position-x: -90px;
+}

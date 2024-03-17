@@ -1,7 +1,7 @@
 import style from './UserName.module.css'
 
 interface Props {
-    content: string
+    content: string | undefined
 }
 
 const UserName = ({ content }: Props) => {

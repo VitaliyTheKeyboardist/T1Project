@@ -1,0 +1,18 @@
+.container {
+  width: 1152px;
+  margin: 138px auto 164px;
+}
+.FAQBlock {
+  width: 1152px;
+
+  margin-top: 114px;
+}
+.stripes {
+  display: flex;
+  justify-content: center;
+}
+.stripesImg {
+  position: relative;
+  left: 240px;
+  top: 25px;
+}

@@ -17,10 +17,10 @@ import ChickenKing from "./components/Atoms/FoodCardImage/ChickenKing.png"
 import FoodCardImageSmall from "./components/Atoms/FoodCardImageSmall/FoodCardImageSmall"
 import QuestionButton from "./components/Atoms/QuestionButton/QuestionButton"
 
-function App() {
+function AppTest() {
   return (
     <>
-      <Logo width={150} height={57} />
+      <Logo type={"header"} />
       <MenuLink text="Recipes" type="header" />
       <MenuLink text="Recipes" type="footer" />
       <H1Title text={"Enjoy Foods All Over The "} spanText={"World"} />
@@ -44,13 +44,12 @@ function App() {
       <Text type={"smallLight"}>
         Satisfied Costumers <br /> All Great Over The World{" "}
       </Text>
-      <FoodCardImage>
-        <img src={ChickenKing} alt="Курица" />
-      </FoodCardImage>
+      <FoodCardImage src={ChickenKing} alt="Курица" />
+       
       <FoodCategory type={"pizza"} content={"Pizza"} />
       <FoodName type={"foodCard"} content={"The Chicken King"} />
       <Rank type={"foodCardRank"} rank={4.8} />
-      <Bookmark />
+      {/* <Bookmark /> */}
       <CookingTime type={"foodCardTime"} content={"24min •"} />
       <FoodCardImageSmall type={"ChickenHell"} />
       <FoodName type={"foodCardSmall"} content={"Chicken Hell"} />
@@ -58,9 +57,9 @@ function App() {
       <Text type={"foodCardStatusCancelled"}>Cancelled</Text>
       <Text type={"deliveryTime"}>3:09 PM</Text>
       <Text type={"comment"}>I cannot believe how I found you, this is so pretty.</Text>
-      <QuestionButton />
+      {/* <QuestionButton /> */}
     </>
   )
 }
 
-export default App
+export default AppTest

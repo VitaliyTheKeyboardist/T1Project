@@ -1,7 +1,7 @@
 .text {
+  text-align: center;
   font-family: Poppins;
   font-size: 45px;
   font-weight: 600;
-  line-height: 26px;
-  color: #323142
+  color: #323142;
 }

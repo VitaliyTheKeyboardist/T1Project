@@ -1,10 +1,12 @@
 .text {
+  margin-top: 17px;
   font-family: "Poppins";
   font-weight: 600;
   font-size: 76px;
   line-height: 91.2px;
+  letter-spacing: -3px;
 }
 .spanText {
-    composes: text;
-    color: #5C4EAE
+  composes: text;
+  color: #5c4eae;
 }

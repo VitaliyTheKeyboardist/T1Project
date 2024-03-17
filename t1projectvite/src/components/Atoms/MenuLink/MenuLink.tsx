@@ -2,7 +2,7 @@ import style from './MenuLink.module.css'
 
 interface Props {
     text: string
-    type: string
+    type: "header" | "footer"
 }
 
 const MenuLink = ({ text, type }: Props) => {

@@ -1,0 +1,12 @@
+.infoBlockContainer {
+  width: 568px;
+  height: 430px;
+  margin-top: 118px;
+  margin-bottom: 190px;
+}
+.buttonBlock {
+  width: 290px;
+  margin-top: 54px;
+  display: flex;
+  justify-content: space-between;
+}

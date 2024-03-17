@@ -1,0 +1,8 @@
+.questionBlock {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  justify-content: space-between;
+  
+  margin: 20px 15px 17px 20px;
+}

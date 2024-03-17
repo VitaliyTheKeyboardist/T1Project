@@ -1,14 +1,13 @@
 import LogoImg from '../Logo/Img/logo.svg'
-
+import style from './Logo.module.css'
 interface Props {
-    width: number,
-    height: number
+    type: "header" | "footer"
 }
 
-const Logo = ({ width, height }: Props) => {
+const Logo = ({ type }: Props) => {
   return (
     <a href='#'>
-        <img src={LogoImg} width={width} height={height} alt='Логотип компании' />
+        <img className={style[type]}src={LogoImg} alt='Логотип компании' />
     </a>
   )
 }

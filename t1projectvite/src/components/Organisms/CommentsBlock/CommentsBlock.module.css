@@ -1,0 +1,14 @@
+.container {
+  max-width: 1440px;
+  margin: 116px auto 0px;
+}
+.commentsBlock {
+  display: flex;
+  margin-left: 100px;
+  margin-top: 77px;
+}
+.minimizedCommentsBlock {
+  display: flex;
+  max-width: 800px;
+  overflow-x: auto;
+}

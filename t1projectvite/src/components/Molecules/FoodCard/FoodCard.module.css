@@ -1,0 +1,20 @@
+.foodCard {
+  width: 400px;
+  height: 300px;
+  border-radius: 30px;
+  border: 1px solid #f4f4f6;
+  background-color: #fff;
+  box-shadow: 6px 72px 36px 0px #e5e5e5b2;
+  position: relative;
+  transition: 0.2s;
+}
+.foodCard:hover {
+  transform: translate(0px, -10px);
+}
+.textBlock {
+  margin: 10px auto 18px 34px;
+}
+.timeRankBlock {
+  display: flex;
+  width: 137px;
+}

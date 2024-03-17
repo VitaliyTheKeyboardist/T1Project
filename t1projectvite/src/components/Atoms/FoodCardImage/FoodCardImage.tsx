@@ -1,14 +1,14 @@
-import { ReactNode } from 'react'
-import style from './FoodCardImage.module.css'
+import style from "./FoodCardImage.module.css"
 
 interface Props {
-    children: ReactNode
+  src: string
+  alt: string
 }
 
-const FoodCardImage = ({children}: Props) => {
+const FoodCardImage = ({ src, alt }: Props) => {
   return (
-    <div className={style.image}>
-        {children}
+    <div className={style.FoodCardImage}>
+      <img className={style.image}src={src} alt={alt} />
     </div>
   )
 }

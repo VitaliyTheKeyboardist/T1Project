@@ -1,9 +1,13 @@
 .mediumLight {
-  font-family: "Inter";
+  width: 499px;
+  margin-top: 14px;
+  font-family: Inter;
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
   color: #676767;
+  letter-spacing: 0px;
+  text-align: justify;
 }
 .spanText {
   composes: mediumLight;
@@ -19,6 +23,7 @@
   opacity: 0.2;
 }
 .smallLight {
+  margin-top: 11px;
   font-family: "Inter";
   font-weight: 500;
   font-size: 14px;
@@ -30,7 +35,7 @@
   font-family: Poppins;
   font-size: 10px;
   font-weight: 500;
-  line-height: 14px;
+  line-height: 30px;
   letter-spacing: 0px;
   text-align: left;
   color: #323142;
@@ -41,6 +46,8 @@
 }
 .deliveryTime {
   composes: foodCardStatus;
+  position: relative;
+  bottom: 16px;
   text-align: right;
   color: #acadb9;
 }
@@ -53,6 +60,7 @@
   letter-spacing: 0px;
   text-align: justified;
   color: #636363;
+  margin-left: 42px;
 }
 .question {
   font-family: Poppins;
@@ -62,6 +70,7 @@
   letter-spacing: 0em;
   text-align: left;
   color: #323142;
+  z-index: 2;
 }
 .answer {
   font-family: Poppins;
@@ -71,6 +80,9 @@
   letter-spacing: 0.01em;
   text-align: left;
   color: #686868;
+  margin-left: 20px;
+  width: 800px;
+  z-index: 1;
 }
 .line {
   width: 54px;
@@ -79,4 +91,13 @@
   margin-right: 20px;
   opacity: 0.2;
   align-self: center;
+}
+.footer {
+  font-family: Inter;
+font-size: 16px;
+font-weight: 500;
+line-height: 25px;
+letter-spacing: 0px;
+text-align: left;
+color: #999999;
 }

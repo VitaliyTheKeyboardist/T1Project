@@ -3,6 +3,10 @@
   src: url(./assets/fonts/Poppins-Medium.ttf);
 }
 @font-face {
+  font-family: "PoppinsBold";
+  src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
   font-family: "PublicSans";
   src: url(./assets/fonts/PublicSans-Bold.ttf);
 }
@@ -10,3 +14,8 @@
   font-family: "Manrope";
   src: url(./assets/fonts/Manrope-Medium.ttf);
 }
+@font-face {
+  font-family: "Inter";
+  src: url(./assets/fonts/Inter-Regular.ttf);
+}
+

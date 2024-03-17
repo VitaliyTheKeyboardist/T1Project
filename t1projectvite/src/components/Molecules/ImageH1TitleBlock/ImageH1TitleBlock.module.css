@@ -1,0 +1,45 @@
+.container {
+  width: 680px;
+  height: 607px;
+  position: relative;
+  background-image: url(./Image/FoodImage.png);
+  background-repeat: no-repeat;
+  background-position-x: 111px;
+  background-position-y: 137px;
+  display: flex;
+  flex-direction: column;
+}
+.topImage {
+  width: 41px;
+  height: 24px;
+  align-self: flex-end;
+  margin-top: 48px;
+}
+.foodCard {
+  align-self: flex-end;
+  margin-right: 39px;
+  margin-top: 7px;
+  height: 90px;
+  border-radius: 16.5px;
+  box-shadow: 0px 16px 25px 0px rgba(70, 70, 70, 0.2);
+}
+.waveLine {
+  width: 101px;
+  height: 97px;
+  align-self: flex-end;
+  margin-top: 23px;
+  margin-right: 64px;
+}
+.graph {
+  width: 208px;
+  height: 206px;
+  align-self: flex-start;
+  margin-top: 125px;
+  margin-left: 36px;
+}
+.downStripes {
+  width: 38px;
+  height: 33px;
+  align-self: flex-start;
+  margin-top: 0px;
+}
