@@ -1,5 +1,5 @@
-import Minus from './Minus.svg'
-import Plus from './Plus.svg'
+import Minus from "./Minus.svg"
+import Plus from "./Plus.svg"
 import style from "./QuestionButton.module.css"
 
 interface Props {
@@ -8,13 +8,14 @@ interface Props {
 }
 
 const QuestionButton = ({ expanded, onClick }: Props) => {
-
   const image = expanded ? Minus : Plus
   const alt = expanded ? "Свернуть" : "Развернуть"
 
-  return <div className={style.image} onClick={onClick}>
-    <img src={image} alt={alt} />
-  </div>
+  return (
+    <button className={style.button} onClick={onClick}>
+      <img src={image} alt={alt} />
+    </button>
+  )
 }
 
 export default QuestionButton
