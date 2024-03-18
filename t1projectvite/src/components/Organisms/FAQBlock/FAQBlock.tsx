@@ -7,12 +7,14 @@ const FAQBlock = () => {
   return (
     <div className={style.container}>
       <div className={style.stripes}>
-        <img className={style.stripesImg}src={Stripes} alt="" />
+        <img className={style.stripesImg} src={Stripes} alt="" />
       </div>
-      <H3Title>
-        Frequently Asked <br />
-        <span style={{ color: "#5C4EAE" }}>Questions</span>
-      </H3Title>
+      <div className={style.titleBlock}>
+        <H3Title>
+          Frequently Asked <br />
+          <span style={{ color: "#5C4EAE" }}>Questions</span>
+        </H3Title>
+      </div>
       <div className={style.FAQBlock}>
         <FAQBlockItem
           question="How long does delivery take?"

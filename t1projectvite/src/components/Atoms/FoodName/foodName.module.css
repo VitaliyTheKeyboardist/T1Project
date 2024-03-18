@@ -2,8 +2,8 @@
   font-family: Poppins;
   font-size: 26px;
   font-weight: 600;
-  line-height: 42px;
-  letter-spacing: 0px;
+  line-height: 44px;
+  letter-spacing: 0.1px;
   text-align: left;
   color: #323142;
 }
@@ -11,7 +11,7 @@
   font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
-  line-height: 22px;
+  line-height: 25px;
   letter-spacing: 0px;
   text-align: left;
   color: #323142;

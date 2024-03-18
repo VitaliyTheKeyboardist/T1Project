@@ -2,6 +2,7 @@
   width: 680px;
   height: 607px;
   position: relative;
+  left: 35px;
   background-image: url(./Image/FoodImage.png);
   background-repeat: no-repeat;
   background-position-x: 111px;
@@ -17,7 +18,7 @@
 }
 .foodCard {
   align-self: flex-end;
-  margin-right: 39px;
+  margin-right: 37px;
   margin-top: 7px;
   height: 90px;
   border-radius: 16.5px;
@@ -34,8 +35,8 @@
   width: 208px;
   height: 206px;
   align-self: flex-start;
-  margin-top: 125px;
-  margin-left: 36px;
+  margin-top: 124.5px;
+  margin-left: 36.7px;
 }
 .downStripes {
   width: 38px;

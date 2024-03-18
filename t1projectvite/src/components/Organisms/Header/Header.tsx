@@ -10,7 +10,7 @@ const Header = () => {
         <Logo type={"header"} />
         <NavMenu type={"header"} />
       </header>
-      <Line type={"horizontal"}/>
+      <Line type={"horizontal"} />
     </>
   )
 }

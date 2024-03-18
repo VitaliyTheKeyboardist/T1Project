@@ -1,5 +1,5 @@
-import style from "./Button.module.css"
 import Stroke from "./Img/Stroke.svg"
+import style from "./Button.module.css"
 
 interface Props {
   type: string

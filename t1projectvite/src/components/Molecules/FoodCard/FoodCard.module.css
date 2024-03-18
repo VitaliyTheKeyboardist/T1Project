@@ -1,5 +1,5 @@
 .foodCard {
-  width: 400px;
+  width: 401px;
   height: 300px;
   border-radius: 30px;
   border: 1px solid #f4f4f6;
@@ -12,9 +12,10 @@
   transform: translate(0px, -10px);
 }
 .textBlock {
-  margin: 10px auto 18px 34px;
+  margin: 11px auto 18px 35px;
 }
 .timeRankBlock {
   display: flex;
-  width: 137px;
+  width: 134px;
+  justify-content: space-between;
 }

@@ -1,8 +1,8 @@
 import H3Title from "../../Atoms/H3Title/H3Title"
 import FoodCard from "../../Molecules/FoodCard/FoodCard"
 import ChickenKing from "../../Atoms/FoodCardImage/ChickenKing.png"
-import style from "./FoodCardsBlock.module.css"
 import Line from "../../Atoms/Line/Line"
+import style from "./FoodCardsBlock.module.css"
 
 const FoodCardsBlock = () => {
   return (

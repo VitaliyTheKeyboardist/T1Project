@@ -3,8 +3,8 @@
   font-family: "Poppins";
   font-weight: 600;
   font-size: 76px;
-  line-height: 91.2px;
-  letter-spacing: -3px;
+  line-height: 90.5px;
+  letter-spacing: -2.5px;
 }
 .spanText {
   composes: text;

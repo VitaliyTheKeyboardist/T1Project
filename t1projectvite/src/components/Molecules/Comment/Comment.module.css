@@ -11,7 +11,7 @@
   height: 48px;
   display: flex;
   justify-content: space-between;
-  margin: 40px 42px 0px;
+  margin: 38px 42px 6px 41px;
 }
 .minimized {
   min-width: 528px;

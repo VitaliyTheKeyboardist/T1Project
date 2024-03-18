@@ -5,9 +5,11 @@ import style from "./CommentsBlock.module.css"
 const CommentsBlock = () => {
   return (
     <div className={style.container}>
-      <H3Title>
-        <span style={{ color: "#5C4EAE" }}>Customer</span> Say
-      </H3Title>
+      <div className={style.titleBlock}>
+        <H3Title>
+          <span style={{ color: "#5C4EAE" }}>Customer</span> Say
+        </H3Title>
+      </div>
       <div className={style.commentsBlock}>
         <Comment
           type="expanded"
@@ -15,8 +17,14 @@ const CommentsBlock = () => {
           text="I cannot believe how I found you, this is so pretty."
         />
         <div className={style.minimizedCommentsBlock}>
-            <Comment type="minimized" text="I cannot believe how I found you, this is so pretty." />
-            <Comment type="minimized" text="I cannot believe how I found you, this is so pretty." />
+          <Comment
+            type="minimized"
+            text="I cannot believe how I found you, this is so pretty."
+          />
+          <Comment
+            type="minimized"
+            text="I cannot believe how I found you, this is so pretty."
+          />
         </div>
       </div>
     </div>

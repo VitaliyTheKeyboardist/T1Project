@@ -2,8 +2,8 @@ import Button from "../../Atoms/Button/Button"
 import H2Title from "../../Atoms/H2Title/H2Title"
 import ListItem from "../../Atoms/ListItem/ListItem"
 import UnorderedList from "../../Atoms/UnorderedList/UnorderedList"
-import style from "./InfoH2TitleBlock.module.css"
 import WaveLine from "./Image/WaveLine.svg"
+import style from "./InfoH2TitleBlock.module.css"
 
 
 const InfoH2TitleBlock = () => {

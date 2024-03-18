@@ -1,7 +1,7 @@
 import Line from "../../Atoms/Line/Line"
 import InfoH2TitleBlock from "../../Molecules/InfoH2TitleBlock/InfoH2TitleBlock"
-import style from "./H2TitleBlock.module.css"
 import MobilePhone from "./Image/MobilePhone.png"
+import style from "./H2TitleBlock.module.css"
 
 const H2TitleBlock = () => {
   return (

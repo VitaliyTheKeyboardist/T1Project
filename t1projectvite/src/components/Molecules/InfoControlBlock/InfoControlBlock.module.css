@@ -4,4 +4,6 @@
 }
 .foodCardsBlock {
   margin-top: 47px;
+  position: relative;
+  right: 10px;
 }

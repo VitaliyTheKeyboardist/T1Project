@@ -1,11 +1,15 @@
 .container {
   width: 1152px;
-  margin: 138px auto 164px;
+  margin: 117px auto 164px;
+}
+.titleBlock {
+  margin-left: 29px;
 }
 .FAQBlock {
   width: 1152px;
 
-  margin-top: 114px;
+  margin-top: 93px;
+  margin-left: 4px;
 }
 .stripes {
   display: flex;
