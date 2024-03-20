@@ -2,17 +2,17 @@ import CommentsBlock from "../../Organisms/CommentsBlock/CommentsBlock"
 import ControlBlock from "../../Organisms/ControlBlock/ControlBlock"
 import FAQBlock from "../../Organisms/FAQBlock/FAQBlock"
 import FoodCardsBlock from "../../Organisms/FoodCardsBlock/FoodCardsBlock"
-import Footer from "../../Organisms/Footer/Footer"
+// import Footer from "../../Organisms/Footer/Footer"
 import H1TitleBlock from "../../Organisms/H1TitleBlock/H1TitleBlock"
 import H2TitleBlock from "../../Organisms/H2TitleBlock/H2TitleBlock"
-import Header from "../../Organisms/Header/Header"
+// import Header from "../../Organisms/Header/Header"
 import InfoBlock from "../../Organisms/InfoBlock/InfoBlock"
 import style from "./MainPage.module.css"
 
 const MainPage = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <H1TitleBlock />
       <InfoBlock />
       <H2TitleBlock />
@@ -20,7 +20,7 @@ const MainPage = () => {
       <ControlBlock />
       <CommentsBlock />
       <FAQBlock />
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

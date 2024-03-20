@@ -8,9 +8,9 @@ interface Props {
 const NavMenu = ({ type }: Props) => {
   return (
     <nav className={style[type]}>
-        <MenuLink type={type} text={"Recipes"} />
-        <MenuLink type={type} text={"FAQ"} />
-        <MenuLink type={type} text={"Blog"} />
+        <MenuLink type={type} route={"ancor"} link={"/#Recipes"} text={"Recipes"} />
+        <MenuLink type={type} route={"ancor"} link={"/#FAQ"} text={"FAQ"} />
+        <MenuLink type={type} route={"path"} link={"/blog"} text={"Blog"} />
     </nav>
   )
 }

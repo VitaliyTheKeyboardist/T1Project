@@ -10,3 +10,6 @@
   composes: header;
   color: #999999;
 }
+.active {
+  color: red;
+}

@@ -5,7 +5,7 @@ import style from "./FAQBlock.module.css"
 
 const FAQBlock = () => {
   return (
-    <div className={style.container}>
+    <div className={style.container} id="FAQ">
       <div className={style.stripes}>
         <img className={style.stripesImg} src={Stripes} alt="" />
       </div>
