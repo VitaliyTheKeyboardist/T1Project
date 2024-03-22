@@ -1,7 +1,7 @@
 import "./App.css"
 import H1Title from "./components/Atoms/H1Title/H1Title"
 import Logo from "./components/Atoms/Logo/Logo"
-import MenuLink from "./components/Atoms/MenuLink/MenuLink"
+// import MenuLink from "./components/Atoms/MenuLink/MenuLink"
 import Text from "./components/Atoms/Text/Text"
 import Button from "./components/Atoms/Button/Button"
 import H2Title from "./components/Atoms/H2Title/H2Title"
@@ -11,18 +11,18 @@ import FoodCategory from "./components/Atoms/FoodCategory/FoodCategory"
 import FoodName from "./components/Atoms/FoodName/FoodName"
 import Rank from "./components/Atoms/Rank/Rank"
 import CookingTime from "./components/Atoms/CookingTime/CookingTime"
-import Bookmark from "./components/Atoms/Bookmark/Bookmark"
+// import Bookmark from "./components/Atoms/Bookmark/Bookmark"
 import FoodCardImage from "./components/Atoms/FoodCardImage/FoodCardImage"
 import ChickenKing from "./components/Atoms/FoodCardImage/ChickenKing.png"
 import FoodCardImageSmall from "./components/Atoms/FoodCardImageSmall/FoodCardImageSmall"
-import QuestionButton from "./components/Atoms/QuestionButton/QuestionButton"
+// import QuestionButton from "./components/Atoms/QuestionButton/QuestionButton"
 
 function AppTest() {
   return (
     <>
       <Logo type={"header"} />
-      <MenuLink text="Recipes" type="header" />
-      <MenuLink text="Recipes" type="footer" />
+      {/* <MenuLink text="Recipes" type="header" />
+      <MenuLink text="Recipes" type="footer" /> */}
       <H1Title text={"Enjoy Foods All Over The "} spanText={"World"} />
       <Text type={"mediumLight"}>
         EatLy help you set saving goals, earn cash back offers, Go to disclaimer

@@ -1,15 +1,14 @@
-import { Link, NavLink, useLocation } from "react-router-dom"
+import { NavLink, useLocation } from "react-router-dom"
 import style from "./MenuLink.module.css"
 import { useEffect } from "react"
 
 interface Props {
   type: "header" | "footer"
-  route: "ancor" | "path"
   link: string
   text: string
 }
 
-const MenuLink = ({ type, route, link, text }: Props) => {
+const MenuLink = ({ type, link, text }: Props) => {
 
   const location = useLocation()
 
@@ -24,18 +23,11 @@ const MenuLink = ({ type, route, link, text }: Props) => {
   }, [location.hash])
   return (
     <>
-      {/* <a className={style[type]} href={link}>{text}</a> */}
-      {/* {route === "ancor" && ( */}
+      
         <NavLink className={style[type]} to={link}>
           {text}
         </NavLink>
-      {/* )} */}
-
-      {/* {route === "path" && (
-        <NavLink className={style[type]} to={link}>
-          {text}
-        </NavLink>
-      )} */}
+     
     </>
   )
 }

@@ -7,7 +7,6 @@ import H1TitleBlock from "../../Organisms/H1TitleBlock/H1TitleBlock"
 import H2TitleBlock from "../../Organisms/H2TitleBlock/H2TitleBlock"
 // import Header from "../../Organisms/Header/Header"
 import InfoBlock from "../../Organisms/InfoBlock/InfoBlock"
-import style from "./MainPage.module.css"
 
 const MainPage = () => {
   return (

@@ -1,4 +1,4 @@
-import style from './OneArticle.module.css'
+// import style from './OneArticle.module.css'
 
 const OneArticle = () => {
   return (

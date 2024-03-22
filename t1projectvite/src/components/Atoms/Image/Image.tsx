@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import style from './Image.module.css'
+// import style from './Image.module.css'
 
 interface Props {
     children: ReactNode

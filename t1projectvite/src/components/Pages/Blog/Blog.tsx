@@ -1,4 +1,4 @@
-import style from './Blog.module.css'
+// import style from './Blog.module.css'
 
 const Blog = () => {
   return (

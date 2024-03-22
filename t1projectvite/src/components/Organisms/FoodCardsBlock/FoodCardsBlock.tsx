@@ -3,8 +3,8 @@ import FoodCard from "../../Molecules/FoodCard/FoodCard"
 import ChickenKing from "../../Atoms/FoodCardImage/ChickenKing.png"
 import Line from "../../Atoms/Line/Line"
 import style from "./FoodCardsBlock.module.css"
-import { useLocation } from "react-router-dom"
-import { useEffect } from "react"
+// import { useLocation } from "react-router-dom"
+// import { useEffect } from "react"
 
 const FoodCardsBlock = () => {
 

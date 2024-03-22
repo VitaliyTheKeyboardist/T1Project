@@ -7,11 +7,12 @@ interface Props {
   type: "expanded" | "minimized"
   userName?: string | undefined
   text: string
+  onClick?: (() => void)
 }
 
-const Comment = ({ type, userName, text }: Props) => {
+const Comment = ({ type, userName, text, onClick }: Props) => {
   return (
-    <div className={style[type]}>
+    <div className={style[type]} onClick={onClick}>
       {type === "expanded" && (
         <div className={style.headerComment}>
           <UserName content={userName} />
