@@ -6,6 +6,8 @@
   margin-left: 68px;
 }
 .commentsBlock {
+  max-width: 100vw;
+  overflow-x: auto;
   display: flex;
   margin-left: 116px;
   margin-top: 61px;

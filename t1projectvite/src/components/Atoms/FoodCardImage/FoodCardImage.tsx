@@ -8,7 +8,7 @@ interface Props {
 const FoodCardImage = ({ src, alt }: Props) => {
   return (
     <div className={style.FoodCardImage}>
-      <img className={style.image}src={src} alt={alt} />
+      <img className={style.image} src={src} alt={alt} />
     </div>
   )
 }

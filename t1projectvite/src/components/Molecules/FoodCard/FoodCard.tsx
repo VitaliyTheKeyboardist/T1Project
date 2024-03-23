@@ -10,14 +10,14 @@ import style from "./FoodCard.module.css"
 interface Props {
   src: string
   alt: string
-  foodType: "pizza"
-  foodContent: string
+  foodType: string
+  foodContent: string[]
   foodNameType: "foodCard" | "foodCardSmall"
   foodNameContent: string
   rankType: "foodCardRank"
   rank: number
   cookingTimeType: "foodCardTime"
-  cookingTimeContent: string
+  cookingTimeContent: number
 }
 
 const FoodCard = ({

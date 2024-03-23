@@ -3,22 +3,16 @@ import FoodCard from "../../Molecules/FoodCard/FoodCard"
 import ChickenKing from "../../Atoms/FoodCardImage/ChickenKing.png"
 import Line from "../../Atoms/Line/Line"
 import style from "./FoodCardsBlock.module.css"
-// import { useLocation } from "react-router-dom"
-// import { useEffect } from "react"
+import { useFetchAllRecipesQuery } from "../../../services/recipesService"
+import Text from "../../Atoms/Text/Text"
 
 const FoodCardsBlock = () => {
 
-  // const location = useLocation()
+  const { data, isFetching, error } = useFetchAllRecipesQuery(null)
 
-  // useEffect(() =>{
-  //   const ancor = location.hash
-  //   if (ancor) {
-  //     const element = document.getElementById(ancor.substring(1))
-  //     if (element) {
-  //       element.scrollIntoView({ behavior: "smooth"})
-  //     }
-  //   }
-  // }, [location.hash])
+    console.log(data)
+  
+  
 
   return (
     <div className={style.container} id="Recipes">
@@ -26,9 +20,26 @@ const FoodCardsBlock = () => {
         Our Top <span style={{ color: "#5C4EAE" }}>Lunch</span>
       </H3Title>
       <div className={style.foodCardsBlock}>
-        <FoodCard
+        {error && <H3Title>Download failure</H3Title>}
+        {isFetching && <H3Title>Download...</H3Title>}
+        {data && data.recipes.map((item) => (
+          <FoodCard
+            key={item.id}
+            src={item.image}
+            alt={item.name}
+            foodType={"pizza"} 
+            foodContent={item.mealType}
+            foodNameType={"foodCard"}
+            foodNameContent={item.name}
+            cookingTimeType={"foodCardTime"}
+            cookingTimeContent={item.prepTimeMinutes}
+            rankType={"foodCardRank"}
+            rank={item.rating}
+            />
+        ))}
+        {/* <FoodCard
           src={ChickenKing}
-          alt="Курица"
+          alt="Chicken"
           foodType="pizza"
           foodContent="Pizza"
           foodNameType="foodCard"
@@ -61,7 +72,7 @@ const FoodCardsBlock = () => {
           cookingTimeContent="24min •"
           rankType="foodCardRank"
           rank={4.8}
-        />
+        /> */}
       </div>
       <Line type={"horizontal"} />
     </div>

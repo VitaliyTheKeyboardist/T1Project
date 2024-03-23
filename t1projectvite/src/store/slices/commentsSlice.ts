@@ -1,5 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit"
-// import { useFetchAllCommentsQuery } from "../../services/CommentService"
+import { PayloadAction, createSlice } from "@reduxjs/toolkit"
 import { commentApi } from "../../services/CommentService"
 
 interface User {
@@ -25,29 +24,27 @@ const initialState: CommentsType = {
 const commentsSlice = createSlice({
   name: "comments",
   initialState,
-  reducers: {},
-// {
-//     download: (state, action) => {
-//       console.log(action.payload)
-//       state.comments = action.payload.comments
-//     },
-//     changeName: (state, action) => {
-//         state.comments.map((item) => {
-//           if (item.id === action.payload) item.user.username = "VitaliyTheBest"
-//           else return
-//         })
-//     },
-//   },
+  reducers: {
+    // changeName: (state, action: PayloadAction<number>) => {
+    //   console.log(state.comments)
+    //   state.comments.map((item) => {
+    //     if (item.id === action.payload) item.user.username = "VitaliyTheBest"
+    //     else return
+    //   })
+    // },
+  },
   extraReducers: (build) => {
     build.addMatcher(
       commentApi.endpoints.fetchAllComments.matchFulfilled,
-      (state, action) => {
-        state.comments = action.payload.comments
+      (state, action: PayloadAction<CommentsType>) => {
+        const result = action.payload.comments
+        state.comments = result
+        console.log(state.comments)
       }
     )
   },
 })
 
-// export const { download, changeName } = commentsSlice.actions
+// export const { changeName } = commentsSlice.actions
 
 export default commentsSlice.reducer

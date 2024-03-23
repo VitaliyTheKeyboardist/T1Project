@@ -8,14 +8,10 @@ export const commentApi = createApi({
     fetchAllComments: build.query<CommentsType, null>({
       query: () => ({
         url: "/comments",
-        method: 'GET'
+        method: "GET",
       }),
-    //   transformResponse: (response: any) => response.data ?? []
-      
     }),
-    
   }),
-  
 })
 
 export const { useFetchAllCommentsQuery } = commentApi
