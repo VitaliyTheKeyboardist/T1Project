@@ -23,7 +23,7 @@ const InfoH2TitleBlock = () => {
       </UnorderedList>
       <Button type={"deepImage"} text={"Download "} img={"afterText"} />
       <div className={style.image}>
-        <img src={WaveLine} alt="Волнистая линия" />
+        <img src={WaveLine} alt="Wave line" />
       </div>
     </div>
   )

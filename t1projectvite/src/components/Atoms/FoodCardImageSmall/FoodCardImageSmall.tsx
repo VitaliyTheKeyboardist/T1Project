@@ -12,9 +12,9 @@ const FoodCardImageSmall = ({ type }: Props) => {
   
   return (
     <div className={style.imageSmall}>
-      {type ==="ChickenHell" && <img src={ChickenHell} alt="Изображение блюда" />}
-      {type ==="SweDish" && <img src={SweDish} alt="Изображение блюда" />}
-      {type ==="FishHellVeg" && <img src={FishHellVeg} alt="Изображение блюда" />}
+      {type ==="ChickenHell" && <img src={ChickenHell} alt="Chicken Hell image" />}
+      {type ==="SweDish" && <img src={SweDish} alt="Swe Dish image" />}
+      {type ==="FishHellVeg" && <img src={FishHellVeg} alt="Fish Hell Veg image" />}
     </div>
   )
 }

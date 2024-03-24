@@ -1,13 +1,14 @@
 import Comment from "../../Molecules/Comment/Comment"
 import { commentApi } from "../../../services/CommentService"
-import Text from "../../Atoms/Text/Text"
+import H3Title from "../../Atoms/H3Title/H3Title"
 
 const Comments = () => {
-  const { data, error, isLoading } = commentApi.useFetchAllCommentsQuery(null)
+  const { data, error, isFetching } = commentApi.useFetchAllCommentsQuery(null)
 
   return (
     <>
-      {isLoading && <Text type="comment">Загрузка</Text>}
+      {error && <H3Title>Download failure</H3Title>}
+      {isFetching && <H3Title>Download...</H3Title>}
       {data &&
         data.comments.map(
           (item, index) =>
@@ -20,7 +21,6 @@ const Comments = () => {
               />
             )
         )}
-      {error && <Text type="comment">Данные не были загружены</Text>}
     </>
   )
 }

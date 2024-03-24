@@ -8,7 +8,7 @@ interface Props {
 const Logo = ({ type }: Props) => {
   return (
     <Link to="/">
-      <img className={style[type]} src={LogoImg} alt="Логотип компании" />
+      <img className={style[type]} src={LogoImg} alt="Logotype" />
     </Link>
   )
 }

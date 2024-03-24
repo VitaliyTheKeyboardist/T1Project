@@ -9,7 +9,7 @@ const ControlBlock = () => {
       <div className={style.controlBlock}>
         <InfoControlBlock />
         <div className={style.imageBlock}>
-          <img src={ControlBlockImage} alt="Пример графика" />
+          <img src={ControlBlockImage} alt="Analitica" />
         </div>
       </div>
       <Line type={"horizontal"} />

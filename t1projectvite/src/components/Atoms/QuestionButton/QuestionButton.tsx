@@ -9,7 +9,7 @@ interface Props {
 
 const QuestionButton = ({ expanded, onClick }: Props) => {
   const image = expanded ? Minus : Plus
-  const alt = expanded ? "Свернуть" : "Развернуть"
+  const alt = expanded ? "to collapse" : "to expand"
 
   return (
     <button className={style.button} onClick={onClick}>

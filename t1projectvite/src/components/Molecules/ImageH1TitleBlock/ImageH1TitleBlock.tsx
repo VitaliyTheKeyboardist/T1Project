@@ -20,7 +20,7 @@ const ImageH1TitleBlock = () => {
         />
       </div>
       <img className={style.waveLine} src={WaveLine} alt="" />
-      <img className={style.graph} src={Graph} alt="График" />
+      <img className={style.graph} src={Graph} alt="Graph" />
       <img className={style.downStripes} src={DownStripes} alt="" />
     </div>
   )

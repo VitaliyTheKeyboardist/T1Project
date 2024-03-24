@@ -8,7 +8,7 @@ const H2TitleBlock = () => {
     <>
       <div className={style.container}>
         <div className={style.imageBlock}>
-          <img src={MobilePhone} alt="Изображение телефона" />
+          <img src={MobilePhone} alt="Phone image" />
         </div>
         <InfoH2TitleBlock />
       </div>

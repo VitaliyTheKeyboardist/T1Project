@@ -5,7 +5,7 @@ import style from "./FoodCardsBlock.module.css"
 import { useFetchAllRecipesQuery } from "../../../services/recipesService"
 
 const FoodCardsBlock = () => {
-  const { data, isFetching, error } = useFetchAllRecipesQuery(null)
+  const { data, error, isFetching } = useFetchAllRecipesQuery(null)
 
   return (
     <div className={style.container} id="Recipes">

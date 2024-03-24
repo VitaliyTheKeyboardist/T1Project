@@ -2,7 +2,7 @@ import style from './H1Title.module.css'
 
 interface Props {
     text: string,
-    spanText: string
+    spanText?: string
 }
 
 const H1Title = ({ text, spanText}: Props) => {

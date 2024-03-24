@@ -14,7 +14,7 @@ const Bookmark = ({ visible }: Props) => {
       <img
         className={visible ? style.display : style.none}
         src={BookmarkImg}
-        alt="В избранное"
+        alt="bookmark"
       />
     </div>
   )
