@@ -24,27 +24,17 @@ const initialState: CommentsType = {
 const commentsSlice = createSlice({
   name: "comments",
   initialState,
-  reducers: {
-    // changeName: (state, action: PayloadAction<number>) => {
-    //   console.log(state.comments)
-    //   state.comments.map((item) => {
-    //     if (item.id === action.payload) item.user.username = "VitaliyTheBest"
-    //     else return
-    //   })
-    // },
-  },
+  reducers: {},
   extraReducers: (build) => {
     build.addMatcher(
       commentApi.endpoints.fetchAllComments.matchFulfilled,
       (state, action: PayloadAction<CommentsType>) => {
         const result = action.payload.comments
         state.comments = result
-        console.log(state.comments)
       }
     )
   },
 })
 
-// export const { changeName } = commentsSlice.actions
 
 export default commentsSlice.reducer

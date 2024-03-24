@@ -5,7 +5,15 @@
   line-height: 26px;
   letter-spacing: 0px;
   text-align: left;
-  color: #8E97A6;
+  color: #8e97a6;
   display: flex;
   align-items: center;
+}
+.articlesRank {
+  composes: foodCardRank;
+  color: #8e97a6;
+}
+.oneArticleRank {
+  composes: articlesRank;
+  align-self: self-end;
 }

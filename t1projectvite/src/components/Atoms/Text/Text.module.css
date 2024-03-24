@@ -102,3 +102,58 @@
   text-align: left;
   color: #999999;
 }
+.articleTitle {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25.18px;
+  text-align: left;
+  color: #252525;
+}
+.articleBody {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26.12px;
+  text-align: justify;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #081420;
+}
+.tag {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #8d8d8d;
+  margin-right: 5px;
+}
+.oneArticleTag {
+  composes: tag;
+  font-size: 16px;
+}
+.userCardText {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #8d8d8d;
+}
+.userCardName {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26.1px;
+  text-align: left;
+}
+.oneArticleBody {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 44.55px;
+  text-align: justify;
+  color:#252525;
+}

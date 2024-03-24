@@ -43,7 +43,6 @@ const recipesSlice = createSlice({
       (state, action: PayloadAction<RecipesType>) => {
         const result = action.payload.recipes
         state.recipes = result
-        console.log(result)
       }
     )
   },

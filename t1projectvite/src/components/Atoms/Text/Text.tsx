@@ -13,6 +13,13 @@ interface Props {
     | "question"
     | "answer"
     | "footer"
+    | "articleTitle"
+    | "articleBody"
+    | "tag"
+    | "oneArticleTag"
+    | "userCardText"
+    | "userCardName"
+    | "oneArticleBody"
   children: ReactNode
 }
 

@@ -6,3 +6,11 @@
   font-weight: 600;
   color: #323142;
 }
+.oneArticleTitle {
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 44.55px;
+  text-align: left;
+  margin-bottom: 32px;
+}

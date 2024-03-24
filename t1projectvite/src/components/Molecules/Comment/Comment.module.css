@@ -6,8 +6,20 @@
   background-color: #fff;
   margin: 0px 37px 40px 0px;
 }
+.oneArticle {
+  composes: expanded;
+  width: 1133px;
+  margin: 0px auto 118px
+}
 .headerComment {
   width: 444px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  margin: 38px 42px 6px 41px;
+}
+.headerCommentLong {
+  width: 1027px;
   height: 48px;
   display: flex;
   justify-content: space-between;

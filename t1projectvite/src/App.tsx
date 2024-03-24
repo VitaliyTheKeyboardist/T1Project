@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import MainPage from "./components/Pages/MainPage/MainPage"
 import Blog from "./components/Pages/Blog/Blog"
-import OneArticle from "./components/Pages/OneArticle/OneArticle"
+import OneArticle from "./components/Organisms/OneArticle/OneArticle"
 import "./App.css"
 import MainLayout from "./Layouts/MainLayout"
 

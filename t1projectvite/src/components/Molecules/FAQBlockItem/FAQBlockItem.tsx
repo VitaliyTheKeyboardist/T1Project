@@ -13,7 +13,7 @@ interface Props {
 const FAQBlockItem = ({ question, answer, status }: Props) => {
   const [expanded, setExpanded] = useState<boolean>(status)
   return (
-    <div>
+    <div style={{ cursor: 'pointer' }} onClick={() => setExpanded(!expanded)}>
       <div className={style.questionBlock}>
         <Text type="question">{question}</Text>
         <QuestionButton

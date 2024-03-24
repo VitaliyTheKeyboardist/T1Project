@@ -4,17 +4,22 @@ import UserName from "../../Atoms/UserName/UserName"
 import style from "./Comment.module.css"
 
 interface Props {
-  type: "expanded" | "minimized"
+  type: "expanded" | "minimized" | "oneArticle"
   userName?: string | undefined
   text: string
-  onClick?: (() => void)
 }
 
-const Comment = ({ type, userName, text, onClick }: Props) => {
+const Comment = ({ type, userName, text }: Props) => {
   return (
-    <div className={style[type]} onClick={onClick}>
+    <div className={style[type]}>
       {type === "expanded" && (
         <div className={style.headerComment}>
+          <UserName content={userName} />
+          <CommentImg />
+        </div>
+      )}
+      {type === "oneArticle" && (
+        <div className={style.headerCommentLong}>
           <UserName content={userName} />
           <CommentImg />
         </div>
