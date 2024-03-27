@@ -26,6 +26,7 @@ const OneArticleHeader = ({ post, user, error, isFetching }: Props) => {
           <div className={style.userBlock}>
             {user && (
               <UserCard
+                type={"userCardMiddle"}
                 name={user.firstName}
                 lastname={user.lastName}
                 image={user.image}

@@ -11,7 +11,7 @@ import SocialLink from "../../Atoms/SocialLink/SocialLink"
 
 const Footer = () => {
   return (
-    <div>
+    <>
       <footer className={style.container}>
         <div className={style.navBlock}>
           <Logo type={"footer"} />
@@ -28,7 +28,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-    </div>
+    </>
   )
 }
 

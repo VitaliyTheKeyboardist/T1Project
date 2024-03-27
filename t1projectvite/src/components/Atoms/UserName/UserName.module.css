@@ -1,4 +1,4 @@
-.text {
+.comment {
   font-family: Poppins;
   font-size: 21px;
   font-weight: 500;
@@ -6,4 +6,20 @@
   letter-spacing: 0px;
   text-align: left;
   color: #030314;
+}
+.userCardSmall {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26.1px;
+  text-align: left;
+  color: #000000
+}
+.userCardMiddle {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26.1px;
+  text-align: left;
+  color: #000000
 }

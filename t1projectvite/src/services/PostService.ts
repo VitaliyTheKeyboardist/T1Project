@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
-import { Post, PostsType, UserData } from "../store/slices/postsSlice"
+import { Post, PostsType, UserData, CommentToAdd } from "../store/slices/postsSlice"
 import { CommentsType } from "../store/slices/commentsSlice"
 
 export const postApi = createApi({
@@ -30,6 +30,18 @@ export const postApi = createApi({
         method: "GET",
       }),
     }),
+    addComment: build.mutation<CommentsType, CommentToAdd>({
+      query: (comment) => ({
+        url: '/comments/add',
+        method: "POST",
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          body: comment.body,
+          postId: comment.postId,
+          userId: comment.userId,
+        })
+      })
+    })
   }),
 })
 
@@ -38,4 +50,5 @@ export const {
   useFetchSinglePostQuery,
   useFetchSingleUserQuery,
   useFetchCommentsQuery,
+  useAddCommentMutation,
 } = postApi

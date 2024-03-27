@@ -1,6 +1,12 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit"
 import { postApi } from "../../services/PostService"
 
+export interface CommentToAdd {
+  body: string
+  userId: number
+  postId: number
+}
+
 export interface UserData {
   firstName: string
   lastName: string

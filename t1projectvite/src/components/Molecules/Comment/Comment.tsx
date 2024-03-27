@@ -14,13 +14,13 @@ const Comment = ({ type, userName, text }: Props) => {
     <div className={style[type]}>
       {type === "expanded" && (
         <div className={style.headerComment}>
-          <UserName content={userName} />
+          <UserName type={"comment"} content={userName} />
           <CommentImg />
         </div>
       )}
       {type === "oneArticle" && (
         <div className={style.headerCommentLong}>
-          <UserName content={userName} />
+          <UserName type={"comment"} content={userName} />
           <CommentImg />
         </div>
       )}

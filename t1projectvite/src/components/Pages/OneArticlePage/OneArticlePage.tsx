@@ -2,7 +2,9 @@ import OneArticle from "../../Organisms/OneArticle/OneArticle"
 
 const OneArticlePage = () => {
   return (
-    <OneArticle />
+    <main>
+      <OneArticle />
+    </main>
   )
 }
 

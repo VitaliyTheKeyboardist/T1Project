@@ -7,12 +7,14 @@ import skipCounterReducer from "./slices/skipCounterSlice"
 import { commentApi } from "../services/CommentService"
 import { recipeApi } from "../services/recipesService"
 import { postApi } from "../services/PostService"
+import postCommentsSlice from "./slices/postCommentsSlice"
 
 export const store = configureStore({
   reducer: {
     comments: commentsReduser,
     recipes: recipesReduser,
     posts: postsReduser,
+    postComments: postCommentsSlice,
     skipCounter: skipCounterReducer,
     [commentApi.reducerPath]: commentApi.reducer,
     [recipeApi.reducerPath]: recipeApi.reducer,

@@ -1,29 +1,29 @@
 import Text from "../../Atoms/Text/Text"
+import UserName from "../../Atoms/UserName/UserName"
 import style from "./UserCard.module.css"
 
 interface Props {
+  type: "userCardSmall" | "userCardMiddle"
   name: string
   lastname: string
   image: string
 }
 
-const UserCard = ({ name, lastname, image }: Props) => {
+const UserCard = ({ type, name, lastname, image }: Props) => {
   return (
-    <div className={style.userCard}>
-      <div className={style.image}>
+    <div className={style[type]}>
+      <div className={type === "userCardSmall" ? style.imageSmall : style.image}>
         <img
-          width="54px"
-          height="56px"
+          className={type === "userCardSmall" ? style.imageSmall : style.image}
           src={image}
           alt="user image"
           style={{ borderRadius: "50%" }}
         />
       </div>
       <div className={style.TextBlock}>
-        <Text type={"userCardText"}>Written By</Text>
-        <Text type={"userCardName"}>
-          {name} {lastname}
-        </Text>
+        <Text type={type}>Written By</Text>
+        <UserName type={type} content={`${name} ${lastname}`} />
+          
       </div>
     </div>
   )

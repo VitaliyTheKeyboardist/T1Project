@@ -1,12 +1,13 @@
 import style from './UserName.module.css'
 
 interface Props {
+    type: "comment" | "userCardSmall" | "userCardMiddle"
     content: string | undefined
 }
 
-const UserName = ({ content }: Props) => {
+const UserName = ({ type, content }: Props) => {
   return (
-    <p className={style.text}>{content}</p>
+    <p className={style[type]}>{content}</p>
   )
 }
 

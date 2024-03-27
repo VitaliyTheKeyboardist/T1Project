@@ -17,7 +17,8 @@ interface Props {
     | "articleBody"
     | "tag"
     | "oneArticleTag"
-    | "userCardText"
+    | "userCardSmall"
+    | "userCardMiddle"
     | "userCardName"
     | "oneArticleBody"
   children: ReactNode

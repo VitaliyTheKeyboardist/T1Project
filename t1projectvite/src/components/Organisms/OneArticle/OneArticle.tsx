@@ -8,9 +8,11 @@ import OneArticleHeader from "../../Molecules/OneArticleHeader/OneArticleHeader"
 import OneArticleBody from "../../Molecules/OneArticleBody/OneArticleBody"
 import OneArticleComments from "../../Molecules/OneArticleComments/OneArticleComments"
 import H3Title from "../../Atoms/H3Title/H3Title"
+import AddCommentBlock from "../AddCommentBlock/AddCommentBlock"
 
 const OneArticle = () => {
-  let { state } = useLocation()
+  const { state } = useLocation()
+
 
   const {
     data: post,
@@ -23,6 +25,8 @@ const OneArticle = () => {
     error: errorComments,
     isFetching: commentsIsFetching,
   } = useFetchCommentsQuery(state.postId)
+
+  
 
   return (
     <>
@@ -46,6 +50,7 @@ const OneArticle = () => {
             error={errorComments}
             isFetching={commentsIsFetching}
           />
+          <AddCommentBlock postId={post.id} userId={post.userId}/>
         </>
       )}
     </>

@@ -5,6 +5,7 @@ import H4Title from "../../Atoms/H4Title/H4Title"
 import Comment from "../Comment/Comment"
 import style from "./OneArticleComments.module.css"
 import H3Title from "../../Atoms/H3Title/H3Title"
+import { useAppSelector } from "../../../store/hooks"
 
 interface Props {
   comments: CommentsType | undefined
@@ -13,6 +14,8 @@ interface Props {
 }
 
 const OneArticleComments = ({ comments, error, isFetching }: Props) => {
+  const newComments = useAppSelector((state) => state.postComments.comments)
+
   return (
     <>
       {error && <H3Title>Download Failure</H3Title>}
@@ -21,6 +24,15 @@ const OneArticleComments = ({ comments, error, isFetching }: Props) => {
         <H4Title>Comments</H4Title>
         {comments &&
           comments.comments.map((item) => (
+            <Comment
+              key={item.id}
+              type={"oneArticle"}
+              userName={`@${item.user.username}`}
+              text={item.body}
+            />
+          ))}
+        {newComments.length > 0 &&
+          newComments.map((item) => (
             <Comment
               key={item.id}
               type={"oneArticle"}

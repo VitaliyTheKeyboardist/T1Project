@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom"
 import Rank from "../../Atoms/Rank/Rank"
 import Text from "../../Atoms/Text/Text"
+import { useFetchSingleUserQuery } from "../../../services/PostService"
+import UserCard from "../UserCard/UserCard"
 import style from "./Article.module.css"
 
 interface Props {
@@ -13,12 +15,18 @@ interface Props {
 }
 
 const Article = ({ title, tags, reactions, body, postId, userId }: Props) => {
+
+  const { data: user, isFetching, error } = useFetchSingleUserQuery(userId)
+
   return (
     <div className={style.container}>
       <Link to="/article" state={{ postId, userId }} className={style.link}>
         <div className={style.articleTitle}>
           <Text type={"articleTitle"}>{title}</Text>
         </div>
+        {isFetching && <Text type={"question"} >Download data...</Text>}
+        {error && <Text type={"question"}>Гser is not loaded</Text>}
+        {user && <UserCard type={"userCardSmall"} name={user.firstName} lastname={user.lastName} image={user.image} />}
         <div className={style.tagsBlock}>
           <div className={style.tags}>
             {tags &&
