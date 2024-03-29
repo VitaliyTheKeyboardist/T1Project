@@ -10,6 +10,7 @@ const TextArea = ({ value, onChange }: Props) => {
     <textarea
       className={style.textArea}
       value={value}
+      placeholder="ENTER YOUR COMMENT"
       onChange={(e) => onChange(e.target.value)}
     ></textarea>
   )

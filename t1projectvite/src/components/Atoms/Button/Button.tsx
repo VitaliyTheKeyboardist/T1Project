@@ -6,12 +6,13 @@ interface Props {
   type: string
   text: string
   img?: string
+  onClick?: () => Promise<void>
+  disabled?: boolean
 }
 
-const Button = ({ type, text, img }: Props) => {
+const Button = ({ type, text, img, onClick, disabled }: Props) => {
   return (
-    
-    <button className={style[type]}>
+    <button className={style[type]} disabled={disabled} onClick={onClick}>
       {img === "beforeText" && (
         <img className={style.imageLeft} src={StrokeLeft} alt="button" />
       )}

@@ -45,3 +45,21 @@
   border-radius: 12.41px;
   text-align: center;
 }
+.sendButton {
+  width: 367px;
+  height: 50px;
+  color: #f9f9f9;
+  background-color: #6c5fbc;
+  border-radius: 15.88px;
+  border: 1px solid #6c5fbc;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 129px;
+}
+.sendButton:disabled {
+  background-color: #918ac3;
+}
