@@ -1,21 +1,19 @@
-import { useAppDispatch, useAppSelector } from "../../../store/hooks"
-import {
-  decrementSkipCounter,
-  incrementSkipCounter,
-} from "../../../store/slices/skipCounterSlice"
 import Stroke from "../../Atoms/Stroke/Stroke"
 import style from "./StrokeBlock.module.css"
 
-const StrokeBlock = () => {
-  const dispatch = useAppDispatch()
-  const skipNumber = useAppSelector((state) => state.skipCounter.value)
+interface Props {
+  skipNumber: number
+  setSkipNumber: React.Dispatch<React.SetStateAction<number>>
+}
+
+const StrokeBlock = ({ skipNumber, setSkipNumber }: Props) => {
   function handleClickRight(e: React.MouseEvent<HTMLButtonElement>) {
     e.stopPropagation()
-    if (skipNumber < 144) dispatch(incrementSkipCounter())
+    if (skipNumber < 144) setSkipNumber((prev) => prev + 12)
   }
   function handleClickLeft(e: React.MouseEvent<HTMLButtonElement>) {
     e.stopPropagation()
-    if (skipNumber) dispatch(decrementSkipCounter())
+    if (skipNumber) setSkipNumber((prev) => prev - 12)
   }
   return (
     <div className={style.strokeBlock}>

@@ -1,5 +1,5 @@
 import { FetchBaseQueryError } from "@reduxjs/toolkit/query"
-import { Post, UserData } from "../../../store/slices/postsSlice"
+import { Post } from "../../../store/slices/postsSlice"
 import H3Title from "../../Atoms/H3Title/H3Title"
 import RankTagsBlock from "../RankTagsBlock/RankTagsBlock"
 import UserCard from "../UserCard/UserCard"

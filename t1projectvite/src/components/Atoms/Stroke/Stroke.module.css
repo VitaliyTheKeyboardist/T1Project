@@ -4,3 +4,9 @@
   outline: none;
   background: none;
 }
+.strokeButtonDisabled {
+  cursor: auto;
+  border: none;
+  outline: none;
+  background: none;
+}
