@@ -1,8 +1,7 @@
-import { useLocation } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import {
   useFetchCommentsQuery,
   useFetchSinglePostQuery,
-  useFetchSingleUserQuery,
 } from "../../../services/PostService"
 import OneArticleHeader from "../../Molecules/OneArticleHeader/OneArticleHeader"
 import OneArticleBody from "../../Molecules/OneArticleBody/OneArticleBody"
@@ -11,22 +10,18 @@ import H3Title from "../../Atoms/H3Title/H3Title"
 import AddCommentBlock from "../AddCommentBlock/AddCommentBlock"
 
 const OneArticle = () => {
-  const { state } = useLocation()
-
+  const params = useParams()
 
   const {
     data: post,
     error: errorPost,
     isFetching: postIsFetching,
-  } = useFetchSinglePostQuery(state.postId)
-  const { data: user } = useFetchSingleUserQuery(state.userId)
+  } = useFetchSinglePostQuery(Number(params.postId))
   const {
     data: comments,
     error: errorComments,
     isFetching: commentsIsFetching,
-  } = useFetchCommentsQuery(state.postId)
-
-  
+  } = useFetchCommentsQuery(Number(params.postId))
 
   return (
     <>
@@ -36,7 +31,6 @@ const OneArticle = () => {
         <>
           <OneArticleHeader
             post={post}
-            user={user}
             error={errorPost}
             isFetching={postIsFetching}
           />
@@ -50,7 +44,7 @@ const OneArticle = () => {
             error={errorComments}
             isFetching={commentsIsFetching}
           />
-          <AddCommentBlock postId={post.id} userId={post.userId}/>
+          <AddCommentBlock postId={post.id} userId={post.userId} />
         </>
       )}
     </>

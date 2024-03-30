@@ -14,7 +14,7 @@ function App() {
           <Route path="/" element={<MainLayout />}>
             <Route index element={<MainPage />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/article" element={<OneArticle />} />
+            <Route path="/article/:postId" element={<OneArticle />} />
             <Route path="*" element={<Page404 />} />
           </Route>
         </Routes>

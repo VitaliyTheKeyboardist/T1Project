@@ -20,7 +20,7 @@ const Article = ({ title, tags, reactions, body, postId, userId }: Props) => {
 
   return (
     <div className={style.container}>
-      <Link to="/article" state={{ postId, userId }} className={style.link}>
+      <Link to={`/article/${postId}`} className={style.link}>
         <div className={style.articleTitle}>
           <Text type={"articleTitle"}>{title}</Text>
         </div>
