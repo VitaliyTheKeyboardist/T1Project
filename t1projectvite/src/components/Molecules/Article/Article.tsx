@@ -18,7 +18,7 @@ const Article = ({ title, tags, reactions, body, postId, userId }: Props) => {
   const { data: user, isFetching, error } = useFetchSingleUserQuery(userId)
 
   return (
-    <div className={style.container}>
+    <article className={style.container}>
       <Link to={`/article/${postId}`} className={style.link}>
         <div className={style.articleTitle}>
           <Text type={"articleTitle"}>{title}</Text>
@@ -51,7 +51,7 @@ const Article = ({ title, tags, reactions, body, postId, userId }: Props) => {
           <Text type={"articleBody"}>{body}</Text>
         </div>
       </Link>
-    </div>
+    </article>
   )
 }
 
