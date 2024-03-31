@@ -16,16 +16,15 @@
 }
 .opacityText {
   display: flex;
-  font-family: "Poppins";
+  font-family: Poppins600;
   font-size: 16px;
-  font-weight: 600;
   line-height: 19px;
   letter-spacing: 2px;
   opacity: 0.2;
 }
 .smallLight {
   margin-top: 11px;
-  font-family: "Inter";
+  font-family: Inter;
   font-weight: 500;
   font-size: 14px;
   line-height: 21.6px;
@@ -33,9 +32,8 @@
   text-align: center;
 }
 .foodCardStatus {
-  font-family: Poppins;
+  font-family: Poppins500;
   font-size: 10px;
-  font-weight: 500;
   line-height: 30px;
   letter-spacing: 0px;
   text-align: left;
@@ -53,10 +51,9 @@
   color: #acadb9;
 }
 .comment {
-  font-family: Poppins;
+  font-family: Poppins400;
   font-size: 18px;
   font-style: italic;
-  font-weight: 400;
   line-height: 26px;
   letter-spacing: 0px;
   text-align: justified;
@@ -64,9 +61,8 @@
   margin-left: 42px;
 }
 .question {
-  font-family: Poppins;
+  font-family: Poppins600;
   font-size: 22px;
-  font-weight: 600;
   line-height: 59px;
   letter-spacing: 0em;
   text-align: left;
@@ -74,9 +70,8 @@
   z-index: 2;
 }
 .answer {
-  font-family: Poppins;
+  font-family: Poppins400;
   font-size: 20px;
-  font-weight: 400;
   line-height: 32px;
   letter-spacing: 0.01em;
   text-align: left;
@@ -112,9 +107,8 @@
   color: #999999;
 }
 .articleTitle {
-  font-family: Poppins;
+  font-family: Poppins600;
   font-size: 20px;
-  font-weight: 600;
   line-height: 25.18px;
   text-align: left;
   color: #252525;
@@ -124,9 +118,8 @@
   width: 305px;
 }
 .articleBody {
-  font-family: Poppins;
+  font-family: Poppins400;
   font-size: 18px;
-  font-weight: 400;
   line-height: 26.12px;
   text-align: justify;
   white-space: nowrap;
@@ -135,9 +128,8 @@
   color: #081420;
 }
 .tag {
-  font-family: Poppins;
+  font-family: Poppins400;
   font-size: 12px;
-  font-weight: 400;
   line-height: 18px;
   text-align: left;
   color: #8d8d8d;
@@ -148,7 +140,7 @@
   font-size: 16px;
 }
 .userCardMiddle {
-  font-family: Poppins;
+  font-family: Poppins400;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -161,14 +153,14 @@
   font-size: 14px;
 }
 .userCardName {
-  font-family: Poppins;
+  font-family: Poppins500;
   font-size: 18px;
   font-weight: 500;
   line-height: 26.1px;
   text-align: left;
 }
 .oneArticleBody {
-  font-family: Poppins;
+  font-family: Poppins400;
   font-size: 22px;
   font-weight: 400;
   line-height: 44.55px;

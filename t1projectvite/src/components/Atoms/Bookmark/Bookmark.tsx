@@ -1,5 +1,5 @@
-import style from "./Bookmark.module.css"
 import BookmarkImg from "./Bookmark.svg"
+import style from "./Bookmark.module.css"
 
 interface Props {
   visible: boolean

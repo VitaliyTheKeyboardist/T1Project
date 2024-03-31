@@ -1,6 +1,6 @@
 import { NavLink, useLocation } from "react-router-dom"
-import style from "./MenuLink.module.css"
 import { useEffect } from "react"
+import style from "./MenuLink.module.css"
 
 interface Props {
   type: "header" | "footer"
