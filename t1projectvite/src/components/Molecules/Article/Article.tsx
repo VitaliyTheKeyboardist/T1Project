@@ -15,7 +15,6 @@ interface Props {
 }
 
 const Article = ({ title, tags, reactions, body, postId, userId }: Props) => {
-
   const { data: user, isFetching, error } = useFetchSingleUserQuery(userId)
 
   return (
@@ -24,9 +23,19 @@ const Article = ({ title, tags, reactions, body, postId, userId }: Props) => {
         <div className={style.articleTitle}>
           <Text type={"articleTitle"}>{title}</Text>
         </div>
-        {isFetching && <Text type={"question"} >Download data...</Text>}
-        {error && <Text type={"question"}>Гser is not loaded</Text>}
-        {user && <UserCard type={"userCardSmall"} name={user.firstName} lastname={user.lastName} image={user.image} />}
+        <div className={style.userCardBlock}>
+          {isFetching && <Text type={"question"}>Download data...</Text>}
+          {error && <Text type={"question"}>User is not loaded</Text>}
+          {user && (
+            <UserCard
+              type={"userCardSmall"}
+              name={user.firstName}
+              lastname={user.lastName}
+              image={user.image}
+            />
+          )}
+          <Rank type={"articlesRank"} rank={reactions} />
+        </div>
         <div className={style.tagsBlock}>
           <div className={style.tags}>
             {tags &&
@@ -37,7 +46,6 @@ const Article = ({ title, tags, reactions, body, postId, userId }: Props) => {
                 </Text>
               ))}
           </div>
-          <Rank type={"articlesRank"} rank={reactions} />
         </div>
         <div className={style.articleBody}>
           <Text type={"articleBody"}>{body}</Text>

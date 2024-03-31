@@ -15,3 +15,7 @@
   border-color: #adadad;
   margin-top: 24px;
 }
+.horizontalFAQ {
+  composes: horizontalComment;
+  margin: 0px;
+}

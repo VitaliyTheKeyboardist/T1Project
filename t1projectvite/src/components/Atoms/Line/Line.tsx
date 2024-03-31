@@ -1,7 +1,7 @@
 import style from "./Line.module.css"
 
 interface Props {
-  type: "horizontal" | "vertical" | "horizontalComment"
+  type: "horizontal" | "vertical" | "horizontalComment" | "horizontalFAQ"
 }
 
 const Line = ({ type }: Props) => {

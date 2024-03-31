@@ -12,6 +12,7 @@ interface Props {
     | "comment"
     | "question"
     | "answer"
+    | "answerHidden"
     | "footer"
     | "articleTitle"
     | "articleBody"
