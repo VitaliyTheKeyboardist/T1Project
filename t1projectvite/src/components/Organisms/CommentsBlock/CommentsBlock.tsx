@@ -1,10 +1,9 @@
 import H3Title from "../../Atoms/H3Title/H3Title"
-import Comments from "../Comments/Comments"
+// import Comments from "../Comments/Comments"
+import SliderComments from "../SliderComments/SliderComments"
 import style from "./CommentsBlock.module.css"
 
 const CommentsBlock = () => {
-
-
   return (
     <div className={style.container}>
       <div className={style.titleBlock}>
@@ -13,7 +12,8 @@ const CommentsBlock = () => {
         </H3Title>
       </div>
       <div className={style.commentsBlock}>
-        <Comments />
+        {/* <Comments /> */}
+        <SliderComments />
       </div>
     </div>
   )
