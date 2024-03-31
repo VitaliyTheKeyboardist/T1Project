@@ -10,6 +10,7 @@ const Bookmark = ({ visible }: Props) => {
   return (
     <div
       className={style.bookmark}
+      data-testid="bookmark"
     >
       <img
         className={visible ? style.display : style.none}

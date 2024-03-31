@@ -14,7 +14,11 @@ const Stroke = ({ type, enabled, onClick }: Props) => {
   return (
     <>
       {type === "left" && enabled && (
-        <button className={style.strokeButton} onClick={onClick}>
+        <button
+          className={style.strokeButton}
+          data-testid="btn-test-left"
+          onClick={onClick}
+        >
           <img src={StrokeLeftEnabled} alt="stroke" />
         </button>
       )}
@@ -24,7 +28,11 @@ const Stroke = ({ type, enabled, onClick }: Props) => {
         </button>
       )}
       {type === "right" && enabled && (
-        <button className={style.strokeButton} onClick={onClick}>
+        <button
+          className={style.strokeButton}
+          data-testid="btn-test"
+          onClick={onClick}
+        >
           <img src={StrokeRightEnabled} alt="stroke" />
         </button>
       )}
