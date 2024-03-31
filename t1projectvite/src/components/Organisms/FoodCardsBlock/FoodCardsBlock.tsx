@@ -7,9 +7,6 @@ import { useFetchAllRecipesQuery } from "../../../services/recipesService"
 const FoodCardsBlock = () => {
   const { data, error, isFetching } = useFetchAllRecipesQuery(null)
 
-  let recipes = data && [...data.recipes]
-  let sortRecipes = recipes?.sort((a, b) => b.rating - a.rating)
-
   return (
     <div className={style.container} id="Recipes">
       <H3Title>
@@ -18,8 +15,8 @@ const FoodCardsBlock = () => {
       <div className={style.foodCardsBlock}>
         {error && <H3Title>Download failure</H3Title>}
         {isFetching && <H3Title>Download...</H3Title>}
-        {sortRecipes &&
-          sortRecipes.map(
+        {data &&
+          data.recipes.map(
             (item, index) =>
               index < 3 && (
                 <FoodCard

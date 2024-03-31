@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
-import { RecipesType } from "../store/slices/recipesSlice"
+import { Recipe, RecipesType } from "../store/slices/recipesSlice"
 
 export const recipeApi = createApi({
   reducerPath: "recipeApi",
@@ -10,6 +10,10 @@ export const recipeApi = createApi({
         url: "/recipes/meal-type/dinner",
         method: "GET",
       }),
+      transformResponse: (response: RecipesType): RecipesType =>{
+       const result =  response.recipes.sort((a: Recipe, b: Recipe) => b.rating - a.rating)
+       return { recipes: result}
+      },
     }),
   }),
 })
