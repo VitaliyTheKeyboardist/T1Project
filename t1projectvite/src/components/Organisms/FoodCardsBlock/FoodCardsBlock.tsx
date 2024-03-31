@@ -7,6 +7,9 @@ import { useFetchAllRecipesQuery } from "../../../services/recipesService"
 const FoodCardsBlock = () => {
   const { data, error, isFetching } = useFetchAllRecipesQuery(null)
 
+  let recipes = data && [...data.recipes]
+  let sortRecipes = recipes?.sort((a, b) => b.rating - a.rating)
+
   return (
     <div className={style.container} id="Recipes">
       <H3Title>
@@ -15,22 +18,25 @@ const FoodCardsBlock = () => {
       <div className={style.foodCardsBlock}>
         {error && <H3Title>Download failure</H3Title>}
         {isFetching && <H3Title>Download...</H3Title>}
-        {data &&
-          data.recipes.map((item) => (
-            <FoodCard
-              key={item.id}
-              src={item.image}
-              alt={item.name}
-              foodType={"pizza"}
-              foodContent={item.mealType}
-              foodNameType={"foodCard"}
-              foodNameContent={item.name}
-              cookingTimeType={"foodCardTime"}
-              cookingTimeContent={item.prepTimeMinutes}
-              rankType={"foodCardRank"}
-              rank={item.rating}
-            />
-          ))}
+        {sortRecipes &&
+          sortRecipes.map(
+            (item, index) =>
+              index < 3 && (
+                <FoodCard
+                  key={item.id}
+                  src={item.image}
+                  alt={item.name}
+                  foodType={"pizza"}
+                  foodContent={item.mealType}
+                  foodNameType={"foodCard"}
+                  foodNameContent={item.name}
+                  cookingTimeType={"foodCardTime"}
+                  cookingTimeContent={item.prepTimeMinutes}
+                  rankType={"foodCardRank"}
+                  rank={item.rating}
+                />
+              )
+          )}
       </div>
       <Line type={"horizontal"} />
     </div>

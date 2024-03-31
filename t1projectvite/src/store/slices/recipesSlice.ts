@@ -36,6 +36,10 @@ const recipesSlice = createSlice({
       state.recipes = action.payload
       console.log(state.recipes)
     },
+    sort: (state, action: PayloadAction<RecipesType>) => {
+      let result = action.payload.recipes
+      state.recipes = result.sort((a, b) => b.rating - a.rating)
+    },
   },
   extraReducers: (build) => {
     build.addMatcher(
@@ -47,5 +51,5 @@ const recipesSlice = createSlice({
     )
   },
 })
-export const { download } = recipesSlice.actions
+export const { download, sort } = recipesSlice.actions
 export default recipesSlice.reducer
