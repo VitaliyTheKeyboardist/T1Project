@@ -1,0 +1,31 @@
+.container {
+  height: 345px;
+  background-color: #eaeaea;
+  border: 1px solid #eaeaea;
+}
+.navBlock {
+  width: 1248px;
+  margin: 96px auto 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.linkBlock {
+  width: 1248px;
+  margin: 56px auto 81px;
+  display: flex;
+  justify-content: space-between;
+}
+.socialLinkBlock {
+  display: flex;
+  width: 237px;
+  justify-content: space-between;
+}
+.socialLink {
+  width: 20px;
+  height: 20px;
+}
+.socialLinkFace {
+  width: 9px;
+  height: 20px;
+}

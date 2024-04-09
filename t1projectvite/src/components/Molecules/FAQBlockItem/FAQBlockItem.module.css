@@ -1,0 +1,22 @@
+.container {
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  height: 100px;
+  transition: height 1s;
+}
+.containerExpanded {
+  composes: container;
+  height: 200px;
+}
+
+.questionBlock {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background-color: #f9f9f9;
+  justify-content: space-between;
+  margin: 0px 15px 17px 0px;
+  position: relative;
+  z-index: 1;
+}

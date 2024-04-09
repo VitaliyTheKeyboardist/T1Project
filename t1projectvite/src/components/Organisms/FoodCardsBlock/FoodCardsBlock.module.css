@@ -1,0 +1,10 @@
+.container {
+  margin: 84px auto 0px;
+  width: 1250px;
+  scroll-behavior: smooth;
+}
+.foodCardsBlock {
+  margin: 65px 0px 227px -3px;
+  display: flex;
+  justify-content: space-between;
+}

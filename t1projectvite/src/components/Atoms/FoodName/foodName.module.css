@@ -1,0 +1,18 @@
+.foodCard {
+  font-family: Poppins600;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #323142;
+}
+.foodCardSmall {
+  font-family: Poppins600;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #323142;
+}

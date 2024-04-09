@@ -1,0 +1,8 @@
+.container {
+  margin: 0px auto;
+  width: 1250px;
+  display: flex;
+}
+.imageBlock {
+  margin: 106px 220px 0px 110px;
+}

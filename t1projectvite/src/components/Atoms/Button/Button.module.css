@@ -1,0 +1,76 @@
+.deep {
+  cursor: pointer;
+  font-family: Poppins500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 18px 33px 17px 29px;
+  background-color: #6c5fbc;
+  color: #ffffff;
+  border: 1px solid #6c5fbc;
+  border-radius: 12.41px;
+}
+.deepImage {
+  composes: deep;
+  padding-top: 10px;
+}
+.light {
+  composes: deep;
+  background-color: #ffffff;
+  color: #6c5fbc;
+}
+.image {
+  position: relative;
+  top: 8px;
+  left: 4px;
+  margin-left: 14px;
+}
+.imageLeft {
+  position: absolute;
+  top: 12px;
+  left: 22px;
+}
+.lightImageLink {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  font-family: Poppins500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 18px 33px 17px 69px;
+  background-color: #ffffff;
+  color: #6c5fbc;
+  border: 1px solid #6c5fbc;
+  border-radius: 12.41px;
+  text-align: center;
+}
+.sendButton {
+  width: 367px;
+  height: 50px;
+  color: #f9f9f9;
+  background-color: #6c5fbc;
+  border-radius: 15.88px;
+  border: 1px solid #6c5fbc;
+  font-family: Poppins500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 129px;
+}
+.sendButton:disabled {
+  background-color: #918ac3;
+}
+.sendButton:disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+.deep:hover,
+.deepImage:hover,
+.imageLeft:hover,
+.light:hover,
+.lightImageLink:hover,
+.sendButton:hover {
+  transform: scale(1.02);
+  box-shadow: 4px 3px 7px 3px #bebec1;
+  transition: 0.2s;
+}

@@ -1,0 +1,11 @@
+.text {
+  margin-top: 17px;
+  font-family: Poppins600;
+  font-size: 76px;
+  line-height: 90.5px;
+  letter-spacing: -2.5px;
+}
+.spanText {
+  composes: text;
+  color: #5c4eae;
+}

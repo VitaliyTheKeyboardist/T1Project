@@ -1,0 +1,7 @@
+.strokeBlock {
+    display: flex;
+    width: 170px;
+    height: 30px;
+    justify-content: space-between;
+    margin: 0px auto 60px;
+}

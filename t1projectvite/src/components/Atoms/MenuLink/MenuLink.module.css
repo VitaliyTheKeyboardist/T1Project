@@ -1,0 +1,19 @@
+.header {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26.74px;
+  text-decoration: none;
+  color: #606060;
+}
+.footer {
+  composes: header;
+  color: #999999;
+}
+.active {
+  color: red;
+}
+.header:hover,
+.footer:hover {
+  color: #6651c7;
+}

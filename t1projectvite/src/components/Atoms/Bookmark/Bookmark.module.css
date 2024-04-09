@@ -1,0 +1,15 @@
+.bookmark {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 40px;
+  bottom: 10px;
+}
+.none {
+  opacity: 0;
+}
+.display {
+  opacity: 1;
+  transition: 0.5s;
+}

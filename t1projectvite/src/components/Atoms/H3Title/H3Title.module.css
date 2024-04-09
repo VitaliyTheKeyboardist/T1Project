@@ -1,0 +1,14 @@
+.text {
+  margin-right: 43px;
+  text-align: center;
+  font-family: Poppins600;
+  font-size: 45px;
+  color: #323142;
+}
+.oneArticleTitle {
+  font-family: Poppins600;
+  font-size: 40px;
+  line-height: 44.55px;
+  text-align: left;
+  margin-bottom: 32px;
+}

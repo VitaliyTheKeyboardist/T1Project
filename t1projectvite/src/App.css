@@ -1,0 +1,29 @@
+@font-face {
+  font-family: Poppins600;
+  src: url(./assets/fonts/Poppins-SemiBold600.ttf);
+}
+
+@font-face {
+  font-family: Poppins500;
+  src: url(./assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Poppins400;
+  src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins700;
+  src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: "PublicSans";
+  src: url(./assets/fonts/PublicSans-Bold.ttf);
+}
+@font-face {
+  font-family: Manrope400;
+  src: url(./assets/fonts/Manrope-Regular.ttf);
+}
+@font-face {
+  font-family: Inter;
+  src: url(./assets/fonts/Inter-Regular.ttf);
+}
